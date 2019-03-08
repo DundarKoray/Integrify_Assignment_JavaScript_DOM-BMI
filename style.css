@@ -31,9 +31,9 @@ h1 {
   margin-bottom: 10px;
 }
 
-.wrapper-input input {
+.input {
   padding: 12px;
-  font-size: 110%;
+  font-size: 80%;
 }
 
 button {
@@ -78,8 +78,18 @@ button {
   justify-content: flex-start;
 }
 
-.footer {
+.bmi-result {
   background: #89d79d;
   height: 80px;
   border-radius: 5px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bmi-result__p {
+  color: white;
+  font-size: 250%;
 }

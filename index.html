@@ -13,24 +13,34 @@
         <h1>Calculate your BMI</h1>
       </div>
       <div class="wrapper-input">
-        <input type="text" placeholder="Mass in Kilogram" />
-        <input type="text" placeholder="Mass in Kilogram" />
+        <input
+          class="input input__mass"
+          type="text"
+          placeholder="Insert your mass in kg"
+        />
+        <input
+          class="input input__height"
+          type="text"
+          placeholder="Insert your height in m"
+        />
         <button>Calculate</button>
       </div>
       <div class="wrapper-body">
         <div class="bmiResultBox">
           <ul>
             <li>Underweight: BMI is less than 18.5</li>
-            <li>Underweight: BMI is less than 18.5</li>
-            <li>Underweight: BMI is less than 18.5</li>
-            <li>Underweight: BMI is less than 18.5</li>
+            <li>Normal weight: BMI is 18.5 to 24.9</li>
+            <li>Overweight: BMI is 25 to 29.9</li>
+            <li>Obese: BMI is more than 300</li>
           </ul>
         </div>
         <div class="bmiResultImage">
           <img src="./img/default.jpg" alt="" />
         </div>
       </div>
-      <div class="footer"></div>
+      <div class="bmi-result">
+        <p class="bmi-result__p">Here you will see your BMI result.</p>
+      </div>
     </div>
     <script src="/scricpt.js"></script>
   </body>
