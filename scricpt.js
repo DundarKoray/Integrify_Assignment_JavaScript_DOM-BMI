@@ -21,11 +21,13 @@ function calculationBMI() {
   } else if (BMI < 30 && BMI > 24.9) {
     bmiResult.style.background = "orange";
     bmiResultImage.src = "./img/overweight.jpg";
-  } else if (BMI < 24.9 && BMI > 18.5) {
+  } else if (BMI <= 24.9 && BMI >= 18.5) {
     bmiResult.style.background = "green";
     bmiResultImage.src = "./img/normal.jpg";
-  } else {
+  } else if (BMI < 18.5) {
     bmiResult.style.background = "blue";
     bmiResultImage.src = "./img/underweight.jpg";
+  } else {
+    result.textContent = "Please enter correct values.";
   }
 }
